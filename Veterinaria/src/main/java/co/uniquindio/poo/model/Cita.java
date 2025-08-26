@@ -7,14 +7,13 @@ public class Cita {
     private String lugar;
     private int id;
     private Veterinario veterinario;
-    private Mascota mascota;
 
-    public Cita(Date fecha, String lugar, int id,  Veterinario veterinario, Mascota mascota) {
+
+    public Cita(Date fecha, String lugar, int id,  Veterinario veterinario) {
         this.fecha = fecha;
         this.lugar = lugar;
         this.id = id;
         this.veterinario = veterinario;
-        this.mascota = mascota;
     }
 
     public Date getFecha() {
@@ -36,7 +35,6 @@ public class Cita {
                 ", lugar='" + lugar + '\'' +
                 ", id=" + id +
                 ", veterinario=" + veterinario +
-                ", mascota=" + mascota +
                 '}';
     }
 }

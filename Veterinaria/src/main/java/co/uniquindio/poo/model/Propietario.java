@@ -45,14 +45,18 @@ public class Propietario {
         return telefono;
     }
 
+
+
     public boolean verificarCita(Cita cita) {
         boolean centinela = false;
-        for (Cita cit : listCitas) {
+        for (Cita cit: listCitas) {
             if (cit.getFecha().equals(cita.getFecha())) {
                 centinela = true; //ya existe la fecha
+
             }
         }
-        return centinela;//No existe la fecha
+        return centinela;
+         //No existe la fecha
     }
 
     public void asignarCitaPropietario(Cita cita) {
