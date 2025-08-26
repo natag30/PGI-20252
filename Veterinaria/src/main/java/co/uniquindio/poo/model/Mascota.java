@@ -15,5 +15,16 @@ public class Mascota {
         this.propietario=propietario;
     }
 
-
+    @Override
+    public String toString() {
+        return "Mascota{" +
+                "nombre='" + nombre + '\'' +
+                ", raza='" + raza + '\'' +
+                ", color='" + color + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", id=" + id +
+                ", edad=" + edad +
+                ", propietario=" + propietario +
+                '}';
+    }
 }

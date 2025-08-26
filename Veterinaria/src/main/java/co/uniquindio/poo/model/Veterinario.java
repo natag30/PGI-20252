@@ -8,4 +8,12 @@ public class Veterinario {
         this.nombre = nombre;
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Veterinario{" +
+                "nombre='" + nombre + '\'' +
+                ", id='" + id + '\'' +
+                '}';
+    }
 }

@@ -1,17 +1,39 @@
 package co.uniquindio.poo;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import co.uniquindio.poo.model.Cita;
+import co.uniquindio.poo.model.Mascota;
+import co.uniquindio.poo.model.Propietario;
+import co.uniquindio.poo.model.Veterinario;
+
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        //Creamos propietario
+        Propietario propietario= new Propietario("Natalia","Garcia", "natalia.garcia1992@gmail.com", 1094975918, 105245623 );
+        Propietario propietario1= new Propietario("Andres","Sanchez", "jandressanchez26@gmail.com", 1094965911, 155245623 );
+
+        //Creamos mascota
+        Mascota mascota= new Mascota("Kiara", "Criollo", "tricolor", 4, 1, "Gato", propietario);
+        Mascota mascota1= new Mascota("Sally", "Pug", "Gris", 6, 2,"Perro", propietario);
+        Mascota mascota2= new Mascota("Satoru", "Husky", "Gris", 1, 3,"Perro", propietario1);
+
+        //Creamos veterinario
+        Veterinario veterinario=new Veterinario("Jorge Sanchez", "109598796");
+        Veterinario veterinario1=new Veterinario("Andrea Martinez", "109592396");
+
+        //Creamos cita
+        Cita cita=new Cita( new Date(2025,9,27), "Consultorio 1", 1, veterinario, mascota1);
+        Cita cita2=new Cita( new Date(2025,9,27), "Consultorio 1", 2, veterinario1, mascota);
+        Cita cita3=new Cita( new Date(2025,9,28), "Consultorio 1", 3, veterinario, mascota2);
+
+
+
+
+        System.out.println(cita.toString());
+        System.out.println(cita2.toString());
+        System.out.println(cita3.toString());
+
     }
 }

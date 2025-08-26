@@ -9,7 +9,7 @@ public class Cita {
     private Veterinario veterinario;
     private Mascota mascota;
 
-    public Cita(Date fecha, String lugar, int id, Veterinario veterinario,  Mascota mascota) {
+    public Cita(Date fecha, String lugar, int id,  Veterinario veterinario, Mascota mascota) {
         this.fecha = fecha;
         this.lugar = lugar;
         this.id = id;
@@ -29,6 +29,14 @@ public class Cita {
         return id;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Cita{" +
+                "fecha=" + fecha +
+                ", lugar='" + lugar + '\'' +
+                ", id=" + id +
+                ", veterinario=" + veterinario +
+                ", mascota=" + mascota +
+                '}';
+    }
 }
