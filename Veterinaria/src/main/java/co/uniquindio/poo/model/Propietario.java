@@ -7,7 +7,7 @@ public class Propietario {
     private String nombre, apellido, email;
     private int id, telefono;
     private List<Mascota> listMascotas;
-    private List<Cita> listCitas;
+    private List<Cita> listCitasPropietario;
     //lista de strings, ints, cualquier tipo de dato
     /*private List<String> string;
     private List<Integer> ints;
@@ -22,7 +22,7 @@ public class Propietario {
         this.id = id;
         this.telefono = telefono;
         this.listMascotas = new ArrayList<>();
-        this.listCitas = new ArrayList<>();
+        this.listCitasPropietario = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -46,10 +46,10 @@ public class Propietario {
     }
 
 
-
+/*
     public boolean verificarCita(Cita cita) {
         boolean centinela = false;
-        for (Cita cit: listCitas) {
+        for (Cita cit: listCitasPropietario) {
             if (cit.getFecha().equals(cita.getFecha())) {
                 centinela = true; //ya existe la fecha
 
@@ -61,23 +61,17 @@ public class Propietario {
 
     public void asignarCitaPropietario(Cita cita) {
         if (!verificarCita(cita)) {
-            listCitas.add(cita);
+            listCitasPropietario.add(cita);
             System.out.println("Se agrego");
         } else {
             System.out.println("Ya existe");
         }
     }
-
+*/
     @Override
     public String toString() {
         return "Propietario{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", email='" + email + '\'' +
-                ", id=" + id +
-                ", telefono=" + telefono +
-                ", listMascotas=" + listMascotas +
-                ", listCitas=" + listCitas +
+                "nombre='" + nombre +
                 '}';
     }
 }

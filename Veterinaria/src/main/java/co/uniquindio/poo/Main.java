@@ -24,14 +24,14 @@ public class Main {
         Veterinario veterinario1=new Veterinario("Andrea Martinez", "109592396");
 
         //Creamos cita
-        Cita cita=new Cita( new Date(2025-1900,9,27), "Consultorio 1", 1, veterinario);
-        Cita cita2=new Cita( new Date(2025-1900,9,27), "Consultorio 1", 2, veterinario1);
-        Cita cita3=new Cita( new Date(2025-1900,9,28), "Consultorio 1", 3, veterinario);
-
+        Cita cita=new Cita("2025/9/27", "8:00 a.m", "Consultorio 1", 1, veterinario, mascota, propietario);
+        Cita cita2=new Cita( "2025/9/27", "8:30 a.m", "Consultorio 1", 2, veterinario1, mascota1, propietario1);
+        Cita cita3=new Cita( "2025/9/27", "9:00 a.m", "Consultorio 1", 3, veterinario, mascota2, propietario1);
+/*
         propietario.asignarCitaPropietario(cita);
         propietario1.asignarCitaPropietario(cita2);
         propietario1.asignarCitaPropietario(cita3);
-
+*/
 
         System.out.println(cita.toString());
         System.out.println(cita2.toString());
