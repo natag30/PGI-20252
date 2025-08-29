@@ -7,19 +7,29 @@ public class Cita {
     private String hora;
     private String lugar;
     private int id;
-    private Veterinario veterinario;
-    private Mascota mascota;
-    private Propietario propietario;
 
+    //Relaciones de asosiación
+    private Mascota theMascota;
+    private Veterinario theVeterinario;
 
-    public Cita(String fecha, String hora, String lugar, int id,  Veterinario veterinario, Mascota mascota, Propietario propietario) {
+    /**
+     * Constructor de la clase Cita
+     * @param fecha de la Cita
+     * @param hora de la Cita
+     * @param lugar de la Cita
+     * @param id de la Cita
+     * @param mascota que tiene la Cita
+     * @param veterinario que atiende la Cita
+     */
+
+    //constructor
+    public Cita(String fecha, String hora, String lugar, int id, Mascota mascota,  Veterinario veterinario) {
         this.fecha = fecha;
         this.hora = hora;
         this.lugar = lugar;
         this.id = id;
-        this.veterinario = veterinario;
-        this.mascota = mascota;
-        this.propietario = propietario;
+        this.theMascota = mascota;
+        this.theVeterinario = veterinario;
     }
 
 
@@ -30,9 +40,8 @@ public class Cita {
                 ", hora='" + hora + '\'' +
                 ", lugar='" + lugar + '\'' +
                 ", id=" + id +
-                ", veterinario=" + veterinario +
-                ", mascota=" + mascota +
-                ", propietario=" + propietario +
+                ", theMascota=" + theMascota +
+                ", theVeterinario=" + theVeterinario +
                 '}';
     }
 }

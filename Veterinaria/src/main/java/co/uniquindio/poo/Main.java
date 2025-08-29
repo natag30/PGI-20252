@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-
+/*
         //Creamos propietario
         Propietario propietario= new Propietario("Natalia","Garcia", "natalia.garcia1992@gmail.com", 1094975918, 105245623 );
         Propietario propietario1= new Propietario("Andres","Sanchez", "jandressanchez26@gmail.com", 1094965911, 155245623 );
@@ -31,11 +31,11 @@ public class Main {
         propietario.asignarCitaPropietario(cita);
         propietario1.asignarCitaPropietario(cita2);
         propietario1.asignarCitaPropietario(cita3);
-*/
+
 
         System.out.println(cita.toString());
         System.out.println(cita2.toString());
         System.out.println(cita3.toString());
-
+*/
     }
 }

@@ -4,74 +4,42 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Propietario {
-    private String nombre, apellido, email;
-    private int id, telefono;
-    private List<Mascota> listMascotas;
-    private List<Cita> listCitasPropietario;
+    private String nombre;
+    private String cedula;
+    private String telefono;
+
+    //relaciones de asociación
+    private List<Mascota> listMascotasPropietario;
+
     //lista de strings, ints, cualquier tipo de dato
     /*private List<String> string;
     private List<Integer> ints;
     private List<Character> chart;
     private List<Boolean>b;*/
 
+    //Documentación
+    /**
+     * Constructor de la clase Propietario
+     * @param nombre del Propietario
+     * @param cedula del Propietario
+     * @param telefono del Propietario
+     */
 
-    public Propietario(String nombre, String apellido, String email, int id, int telefono) {
+    //constructor
+    public Propietario(String nombre, String cedula, String telefono){
         this.nombre = nombre;
-        this.apellido = apellido;
-        this.email = email;
-        this.id = id;
+        this.cedula = cedula;
         this.telefono = telefono;
-        this.listMascotas = new ArrayList<>();
-        this.listCitasPropietario = new ArrayList<>();
+        this.listMascotasPropietario = new ArrayList<>();
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public int getTelefono() {
-        return telefono;
-    }
-
-
-/*
-    public boolean verificarCita(Cita cita) {
-        boolean centinela = false;
-        for (Cita cit: listCitasPropietario) {
-            if (cit.getFecha().equals(cita.getFecha())) {
-                centinela = true; //ya existe la fecha
-
-            }
-        }
-        return centinela;
-         //No existe la fecha
-    }
-
-    public void asignarCitaPropietario(Cita cita) {
-        if (!verificarCita(cita)) {
-            listCitasPropietario.add(cita);
-            System.out.println("Se agrego");
-        } else {
-            System.out.println("Ya existe");
-        }
-    }
-*/
     @Override
     public String toString() {
         return "Propietario{" +
-                "nombre='" + nombre +
+                "nombre='" + nombre + '\'' +
+                ", cedula='" + cedula + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", listMascotasPropietario=" + listMascotasPropietario +
                 '}';
     }
 }
