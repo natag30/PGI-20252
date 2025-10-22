@@ -11,4 +11,10 @@ public class Estudiante {
         this.edad=edad;
         this.correo=correo;
     }
+
+    public void validarEdadNegativa(int edad){
+        if(edad<0){
+            throw new IllegalArgumentException();
+        }
+    }
 }

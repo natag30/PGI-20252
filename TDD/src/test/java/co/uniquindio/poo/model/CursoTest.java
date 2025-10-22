@@ -8,6 +8,6 @@ class CursoTest {
 
     @Test
     void agregarEstudiante(){
-        
+
     }
 }
