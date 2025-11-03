@@ -10,4 +10,9 @@ class EstudianteTest {
     public void validarEdadNegativa(){
         assertThrows(Throwable.class, ()->new Estudiante("Luis",-1,"luis@mail.com"));
     }
+
+    @Test
+    public void validarCorreo(){
+        assertThrows(Throwable.class, ()->new Estudiante("Maria", 22, "mariamail.com"));
+    }
 }

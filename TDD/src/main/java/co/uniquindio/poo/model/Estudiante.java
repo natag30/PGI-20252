@@ -7,14 +7,11 @@ public class Estudiante {
     private String correo;
 
     public Estudiante(String nombre, int edad, String correo){
-        this.nombre=nombre;
-        this.edad=edad;
-        this.correo=correo;
-    }
-
-    public void validarEdadNegativa(int edad){
         if(edad<0){
             throw new IllegalArgumentException();
         }
+        this.nombre=nombre;
+        this.edad=edad;
+        this.correo=correo;
     }
 }
