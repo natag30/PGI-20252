@@ -1,8 +1,12 @@
 package co.uniquindio.poo.model;
 
-public class Entrenador extends Persona {
+public class Entrenador {
 
-
+    private String nombre;
+    private int id;
+    private int telefono;
+    private String correo;
+    ;
     /**
      * Constructor de la clase Entrenador
      *
@@ -10,9 +14,12 @@ public class Entrenador extends Persona {
      * @param id        del Entrenador
      * @param telefono  del Entrenador
      * @param correo    del Entrenador
-     * @param direccion del Entrenador
      */
-    public Entrenador(String nombre, int id, int telefono, String correo, String direccion) {
-        super(nombre, id, telefono, correo, direccion);
+    public Entrenador(String nombre, int id, int telefono, String correo) {
+        this.nombre = nombre;
+        this.id = id;
+        this.telefono = telefono;
+        this.correo = correo;
     }
+
 }

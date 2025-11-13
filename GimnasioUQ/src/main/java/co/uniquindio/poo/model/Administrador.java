@@ -1,19 +1,13 @@
 package co.uniquindio.poo.model;
 
-public class Administrador extends  Persona implements IGestion{
+public class Administrador implements IGestion{
 
+    private String usuario;
+    private String contraseña;
 
-    /**
-     * Constructor de la clase Administrador
-     *
-     * @param nombre    del Administrador
-     * @param id        del Administrador
-     * @param telefono  del Administrador
-     * @param correo    del Administrador
-     * @param direccion del Administrador
-     */
-    public Administrador(String nombre, int id, int telefono, String correo, String direccion) {
-        super(nombre, id, telefono, correo, direccion);
+    public Administrador(String usuario, String contraseña) {
+        this.usuario = usuario;
+        this.contraseña = contraseña;
     }
 
     @Override

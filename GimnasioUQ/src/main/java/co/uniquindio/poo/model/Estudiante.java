@@ -1,6 +1,6 @@
 package co.uniquindio.poo.model;
 
-public class Estudiante extends Persona {
+public class Estudiante extends Usuario {
 
     /**
      * Constructor de la clase Estudiante

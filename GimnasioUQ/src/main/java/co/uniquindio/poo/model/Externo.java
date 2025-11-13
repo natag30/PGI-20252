@@ -1,6 +1,6 @@
 package co.uniquindio.poo.model;
 
-public class Externo extends Persona {
+public class Externo extends Usuario {
 
 
     /**
