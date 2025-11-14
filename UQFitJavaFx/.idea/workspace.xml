@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ba2b522-6847-470a-92f5-76724c6c868c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Administrador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Clase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Entrenador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/EstadoMembresia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Estudiante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Externo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/GimnasioUQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/IGestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Membresia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/NivelMembresia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Recepcionista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/TipoMembresia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Trabajador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/Launcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/UsuarioApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/Administrador.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/hello-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "natag30"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/natag30/PGI-20252.git",
+    "accountId": "33994331-f07d-4a9f-a1db-9592842c9a6d"
+  }
+}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="35TjWzA0JWCup0gASUzJugu9PYe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.UsuarioApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/U/Programación/RepositorioPI-Natalia/PGI-20252/UQFitJavaFx/src/main/java/co/uniquindio/poo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\U\Programación\RepositorioPI-Natalia\PGI-20252\UQFitJavaFx\src\main\java\co\uniquindio\poo" />
+      <recent name="C:\U\Programación\RepositorioPI-Natalia\PGI-20252\UQFitJavaFx\src\main\java\co\uniquindio\poo\model" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="UsuarioApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.uniquindio.poo.uqfitjavafx.UsuarioApplication" />
+      <module name="UQFitJavaFx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.uniquindio.poo.uqfitjavafx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UsuarioApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ba2b522-6847-470a-92f5-76724c6c868c" name="Changes" comment="" />
+      <created>1763140992641</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763140992641</updated>
+      <workItem from="1763140993952" duration="4059000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
