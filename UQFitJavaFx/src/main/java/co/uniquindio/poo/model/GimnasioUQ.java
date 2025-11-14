@@ -37,10 +37,111 @@ public class GimnasioUQ {
         this.theRecepcionista = theRecepcionista;
     }
 
+    /**
+     * Metodo que registra un Usuario en el Gimnasio
+     * @param usuario
+     */
+    public void registrarUsuario(Usuario usuario){
+        listUsuarios.add(usuario);
+    }
 
+    /**
+     * Metodo que registra un Entrenador en el Gimnasio
+     * @param entrenador
+     */
+    public void registrarEntrenador(Entrenador entrenador){
+        listEntrenadores.add(entrenador);
+    }
 
+    /**
+     * Metodo que elimina un Entrenador del Gimnasio
+     * @param entrenador
+     */
+    public void eliminarEntrenador(Entrenador entrenador){
+        listEntrenadores.remove(entrenador);
+    }
 
+    /**
+     * Metodo para agregar una clase en el gimnasio
+     * @param clase
+     */
+    public void registrarClase(Clase clase){
+        listClases.add(clase);
+    }
 
+    public void registrarMembresia(Membresia membresia){
+        listMembresias.add(membresia);
+    }
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
+    public List<Usuario> getListUsuarios() {
+        return listUsuarios;
+    }
+
+    public void setListUsuarios(List<Usuario> listUsuarios) {
+        this.listUsuarios = listUsuarios;
+    }
+
+    public List<Clase> getListClases() {
+        return listClases;
+    }
+
+    public void setListClases(List<Clase> listClases) {
+        this.listClases = listClases;
+    }
+
+    public List<Membresia> getListMembresias() {
+        return listMembresias;
+    }
+
+    public void setListMembresias(List<Membresia> listMembresias) {
+        this.listMembresias = listMembresias;
+    }
+
+    public List<Entrenador> getListEntrenadores() {
+        return listEntrenadores;
+    }
+
+    public void setListEntrenadores(List<Entrenador> listEntrenadores) {
+        this.listEntrenadores = listEntrenadores;
+    }
+
+    public Administrador getTheAdministrador() {
+        return theAdministrador;
+    }
+
+    public void setTheAdministrador(Administrador theAdministrador) {
+        this.theAdministrador = theAdministrador;
+    }
+
+    public Recepcionista getTheRecepcionista() {
+        return theRecepcionista;
+    }
+
+    public void setTheRecepcionista(Recepcionista theRecepcionista) {
+        this.theRecepcionista = theRecepcionista;
+    }
 }

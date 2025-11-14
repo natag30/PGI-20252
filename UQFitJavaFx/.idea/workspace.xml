@@ -5,26 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba2b522-6847-470a-92f5-76724c6c868c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Administrador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Clase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Entrenador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/EstadoMembresia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Externo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/GimnasioUQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/IGestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Membresia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/NivelMembresia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Recepcionista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/TipoMembresia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Trabajador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/UsuarioApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/Administrador.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Administrador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Clase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Entrenador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/EstadoMembresia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Estudiante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Externo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/GimnasioUQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/IGestion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Membresia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/NivelMembresia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Recepcionista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/TipoMembresia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Trabajador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Usuario.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763140992641</updated>
-      <workItem from="1763140993952" duration="4059000" />
+      <workItem from="1763140993952" duration="4932000" />
     </task>
     <servers />
   </component>
