@@ -102,7 +102,7 @@ public class Administrador implements IGestion{
 
     @Override
     public String generarReporte() {
-
+        return "";
     }
 
 

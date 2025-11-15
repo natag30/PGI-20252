@@ -28,7 +28,7 @@ public class Membresia {
     }
 
     public double calcularCosto() {
-
+        return  costo;
     }
 
 }

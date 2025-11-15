@@ -46,9 +46,9 @@ public class Recepcionista implements IGestion{
         return bandera;
     }
 
+
     @Override
     public String generarReporte() {
-
+        return "";
     }
-
 }

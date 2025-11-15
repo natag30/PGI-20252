@@ -1,14 +1,14 @@
 module co.uniquindio.poo.uqfitjavafx {
     requires javafx.controls;
     requires javafx.fxml;
-
+    requires javafx.graphics;
 
     opens co.uniquindio.poo.uqfitjavafx to javafx.fxml;
-    exports co.uniquindio.poo.uqfitjavafx;
 
-    opens co.uniquindio.poo.controller;
-    exports co.uniquindio.poo.controller;
+    opens co.uniquindio.poo.viewController;
+    exports co.uniquindio.poo.viewController;
 
     opens co.uniquindio.poo.model;
     exports co.uniquindio.poo.model;
+
 }
