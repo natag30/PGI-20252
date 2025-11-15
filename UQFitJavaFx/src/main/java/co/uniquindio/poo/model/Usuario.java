@@ -1,6 +1,6 @@
 package co.uniquindio.poo.model;
 
-public class Usuario {
+public abstract class Usuario {
 
     private String nombre;
     private int id;

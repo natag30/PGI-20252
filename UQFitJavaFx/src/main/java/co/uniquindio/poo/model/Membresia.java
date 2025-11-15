@@ -17,7 +17,7 @@ public class Membresia {
     private Recepcionista theRecepcionista;
 
     public Membresia(double costo, String fechaInicio, String fechaFin, TipoMembresia tipoMembresia, EstadoMembresia estadoMembresia, NivelMembresia nivelMembresia, Recepcionista theRecepcionista) {
-        this.costo = costo;
+        this.costo = calcularCosto();
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.tipoMembresia = tipoMembresia;
@@ -27,6 +27,8 @@ public class Membresia {
         this.theRecepcionista = theRecepcionista;
     }
 
-    public double calcularCosto() {}
+    public double calcularCosto() {
+
+    }
 
 }
