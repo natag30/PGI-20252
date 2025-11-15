@@ -26,4 +26,7 @@ public class Membresia {
         this.listUsuariosMembresia = new ArrayList<>();
         this.theRecepcionista = theRecepcionista;
     }
+
+    public double calcularCosto() {}
+
 }

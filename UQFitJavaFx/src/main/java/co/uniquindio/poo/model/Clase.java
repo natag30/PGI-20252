@@ -22,4 +22,6 @@ public class Clase {
         this.theEntrenador = theEntrenador;
         this.theRecepcionista = theRecepcionista;
     }
+
+
 }

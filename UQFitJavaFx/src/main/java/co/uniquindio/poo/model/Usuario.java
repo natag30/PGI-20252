@@ -7,6 +7,7 @@ public class Usuario {
     private int telefono;
     private String correo;
     private String direccion;
+
     private Clase theClase;
 
     /**

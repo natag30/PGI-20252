@@ -11,8 +11,11 @@ public class Externo extends Usuario {
      * @param telefono  del Externo
      * @param correo    del Externo
      * @param direccion del Externo
+     * @param theClase del Externo
      */
-    public Externo(String nombre, int id, int telefono, String correo, String direccion) {
-        super(nombre, id, telefono, correo, direccion);
+    public Externo(String nombre, int id, int telefono, String correo, String direccion, Clase theClase) {
+        super(nombre, id, telefono, correo, direccion, theClase);
     }
+
+
 }

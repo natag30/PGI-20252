@@ -11,9 +11,10 @@ public class Trabajador extends Usuario{
      * @param telefono  del Trabajador
      * @param correo    del Trabajador
      * @param direccion del Trabajador
+     * @param theClase del Trabajador
      */
-    public Trabajador(String nombre, int id, int telefono, String correo, String direccion) {
-        super(nombre, id, telefono, correo, direccion);
+    public Trabajador(String nombre, int id, int telefono, String correo, String direccion, Clase theClase) {
+        super(nombre, id, telefono, correo, direccion, theClase);
     }
 
 

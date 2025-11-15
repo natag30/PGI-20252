@@ -37,42 +37,6 @@ public class GimnasioUQ {
         this.theRecepcionista = theRecepcionista;
     }
 
-    /**
-     * Metodo que registra un Usuario en el Gimnasio
-     * @param usuario
-     */
-    public void registrarUsuario(Usuario usuario){
-        listUsuarios.add(usuario);
-    }
-
-    /**
-     * Metodo que registra un Entrenador en el Gimnasio
-     * @param entrenador
-     */
-    public void registrarEntrenador(Entrenador entrenador){
-        listEntrenadores.add(entrenador);
-    }
-
-    /**
-     * Metodo que elimina un Entrenador del Gimnasio
-     * @param entrenador
-     */
-    public void eliminarEntrenador(Entrenador entrenador){
-        listEntrenadores.remove(entrenador);
-    }
-
-    /**
-     * Metodo para agregar una clase en el gimnasio
-     * @param clase
-     */
-    public void registrarClase(Clase clase){
-        listClases.add(clase);
-    }
-
-    public void registrarMembresia(Membresia membresia){
-        listMembresias.add(membresia);
-    }
-
     public String getNombre() {
         return nombre;
     }
