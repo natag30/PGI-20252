@@ -5,64 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba2b522-6847-470a-92f5-76724c6c868c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/controller/AdministradorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/controller/InicioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/controller/RecepcionistaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/Administrador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/Clase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/Entrenador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/EstadoMembresia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/Externo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/GimnasioUQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/IGestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/Membresia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/NivelMembresia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/Recepcionista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/TipoMembresia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/Trabajador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/model/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/viewController/AdministradorViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/viewController/InicioViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/viewController/LoginViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/viewController/RecepcionistaViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/Administrador.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/Login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/Recepcionista.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/gimnasio_UQ.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/uqfitjavafx/descarga.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GimnasioUQFit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GimnasioUQFit/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/GimnasioUQApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/GimnasioUQApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/viewController/InicioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/co/edu/uniquindio/poo/gimnasiouqfit/viewController/InicioViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/Administrador.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/Recepcionista.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/Recepcionista.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/gimnasio_UQ.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/gimnasio_UQ.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/GimnasioUQApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/GimnasioUQApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/controller/AdministradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/controller/AdministradorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/controller/InicioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/controller/InicioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/controller/RecepcionistaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/controller/RecepcionistaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Clase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/Clase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Entrenador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/Entrenador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/EstadoMembresia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/EstadoMembresia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/Estudiante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Externo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/Externo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/GimnasioUQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/GimnasioUQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/IGestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/IGestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Membresia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/Membresia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/NivelMembresia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/NivelMembresia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Recepcionista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/Recepcionista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/TipoMembresia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/TipoMembresia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Trabajador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/Trabajador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/viewController/AdministradorViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/viewController/AdministradorViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/viewController/InicioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/viewController/InicioViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/viewController/LoginViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/viewController/LoginViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/viewController/RecepcionistaViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/uniquindio/poo/uqfitjavafx/viewController/RecepcionistaViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/uqfitjavafx/Administrador.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/uqfitjavafx/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/Recepcionista.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/uqfitjavafx/Recepcionista.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/descarga.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../GimnasioUQFit/src/main/resources/co/edu/uniquindio/poo/gimnasiouqfit/descarga.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/gimnasio_UQ.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co/uniquindio/poo/uqfitjavafx/uqfitjavafx/gimnasio_UQ.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.GimnasioUQApp.executor": "Run",
+    "Application.GimnasioUQApp.executor": "Debug",
     "Application.UsuarioApplication.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -171,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763140992641</updated>
-      <workItem from="1763140993952" duration="30854000" />
+      <workItem from="1763140993952" duration="31899000" />
     </task>
     <servers />
   </component>
