@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo.gimnasiouqfit.model;
 
-public class Externo extends Usuario {
+public class Externo extends Usuario{
 
 
     /**
@@ -13,9 +13,13 @@ public class Externo extends Usuario {
      * @param direccion del Externo
      * @param theClase del Externo
      */
-    public Externo(String nombre, int id, int telefono, String correo, String direccion, Clase theClase) {
-        super(nombre, id, telefono, correo, direccion, theClase);
+    public Externo(String nombre, int id, int telefono, String correo, String direccion, Clase theClase, Membresia theMembresia) {
+        super(nombre, id, telefono, correo, direccion, theClase, theMembresia);
     }
 
 
+    @Override
+    public double calcularDescuento() {
+        return 0;
+    }
 }

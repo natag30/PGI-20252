@@ -1,6 +1,7 @@
 module co.edu.uniquindio.poo.gimnasiouqfit {
     requires javafx.controls;
     requires javafx.fxml;
+    requires co.edu.uniquindio.poo.gimnasiouqfit;
 
 
     opens co.edu.uniquindio.poo.gimnasiouqfit to javafx.fxml;

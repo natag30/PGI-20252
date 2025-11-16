@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo.gimnasiouqfit.model;
 
-public abstract class Usuario {
+public abstract class Usuario implements IDescuento{
 
     private String nombre;
     private int id;
@@ -9,6 +9,7 @@ public abstract class Usuario {
     private String direccion;
 
     private Clase theClase;
+    private Membresia theMembresia;
 
     /**
      * Constructor de la clase Usuario
@@ -17,14 +18,21 @@ public abstract class Usuario {
      * @param telefono  del Usuario
      * @param correo    del Usuario
      * @param direccion del Usuario
+     * @param theClase del Usuario
+     * @param theMembresia del Usuario
      */
-    public Usuario(String nombre, int id, int telefono, String correo, String direccion, Clase theClase) {
+    public Usuario(String nombre, int id, int telefono, String correo, String direccion, Clase theClase, Membresia theMembresia) {
         this.nombre = nombre;
         this.id = id;
         this.telefono = telefono;
         this.correo = correo;
         this.direccion = direccion;
         this.theClase = theClase;
+        this.theMembresia = theMembresia;
+    }
+
+    public void reservarClase(Clase clase){
+        clase.agregarUsuario(this);
     }
 
     public String getNombre() {
@@ -75,6 +83,14 @@ public abstract class Usuario {
         this.theClase = theClase;
     }
 
+    public Membresia getMembresia() {
+        return theMembresia;
+    }
+
+    public void setMembresia(Membresia theMembresia) {
+        this.theMembresia = theMembresia;
+    }
+
     @Override
     public String toString() {
         return "Usuario{" +
@@ -86,4 +102,5 @@ public abstract class Usuario {
                 ", theClase=" + theClase +
                 '}';
     }
+
 }

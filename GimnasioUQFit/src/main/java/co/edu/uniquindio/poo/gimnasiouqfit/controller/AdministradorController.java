@@ -2,7 +2,6 @@ package co.edu.uniquindio.poo.gimnasiouqfit.controller;
 
 import co.edu.uniquindio.poo.gimnasiouqfit.model.Administrador;
 import co.edu.uniquindio.poo.gimnasiouqfit.model.Entrenador;
-import co.edu.uniquindio.poo.gimnasiouqfit.model.GimnasioUQ;
 
 public class AdministradorController {
 
@@ -15,6 +14,5 @@ public class AdministradorController {
     public boolean crearEntrenador(Entrenador entrenador) {
         return administrador.registrarEntrenador(entrenador);
     }
-
 
 }

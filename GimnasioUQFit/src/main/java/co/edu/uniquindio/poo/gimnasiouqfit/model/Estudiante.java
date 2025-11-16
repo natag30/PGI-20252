@@ -1,5 +1,7 @@
 package co.edu.uniquindio.poo.gimnasiouqfit.model;
 
+import javafx.scene.paint.Material;
+
 public class Estudiante extends Usuario {
 
     /**
@@ -11,12 +13,15 @@ public class Estudiante extends Usuario {
      * @param direccion del Estudiante
      * @param theClase del Estudiante
      */
-    public Estudiante(String nombre, int id, int telefono, String correo, String direccion, Clase theClase ) {
-        super(nombre, id, telefono, correo, direccion, theClase);
+    public Estudiante(String nombre, int id, int telefono, String correo, String direccion, Clase theClase, Membresia theMembresia ) {
+        super(nombre, id, telefono, correo, direccion, theClase, theMembresia);
     }
 
 
-
+    @Override
+    public double calcularDescuento() {
+        return 0.15;
+    }
 }
 
 

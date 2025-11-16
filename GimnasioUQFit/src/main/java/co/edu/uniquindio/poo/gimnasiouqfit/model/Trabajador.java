@@ -1,7 +1,6 @@
 package co.edu.uniquindio.poo.gimnasiouqfit.model;
 
-public class Trabajador extends Usuario{
-
+public class Trabajador extends Usuario {
 
     /**
      * Constructor de la clase Trabajador
@@ -13,10 +12,13 @@ public class Trabajador extends Usuario{
      * @param direccion del Trabajador
      * @param theClase del Trabajador
      */
-    public Trabajador(String nombre, int id, int telefono, String correo, String direccion, Clase theClase) {
-        super(nombre, id, telefono, correo, direccion, theClase);
+    public Trabajador(String nombre, int id, int telefono, String correo, String direccion, Clase theClase, Membresia theMembresia) {
+        super(nombre, id, telefono, correo, direccion, theClase, theMembresia);
     }
 
-
+    @Override
+    public double calcularDescuento() {
+        return 0.2;
+    }
 
 }

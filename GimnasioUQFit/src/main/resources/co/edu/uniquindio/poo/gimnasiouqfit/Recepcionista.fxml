@@ -28,15 +28,15 @@
             </Button>
         </buttons>
       </ButtonBar>
-      <TabPane prefHeight="690.0" prefWidth="689.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane prefHeight="647.0" prefWidth="689.0" style="-fx-background-color: #FFFFFF;" tabClosingPolicy="UNAVAILABLE">
          <tabs>
             <Tab text="Agregar/Actualizar Usuario">
                <content>
-                  <SplitPane dividerPositions="0.7908805031446541" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                  <SplitPane dividerPositions="0.7091194968553459" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
                      <items>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="689.0">
                            <children>
-                              <AnchorPane layoutX="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="448.0" prefWidth="690.0" style="-fx-background-color: #FFFFFF;">
+                              <AnchorPane layoutX="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="690.0" style="-fx-background-color: #FFFFFF;">
                                  <children>
                                     <Button fx:id="btnAgregarUsuario" layoutX="183.0" layoutY="404.0" mnemonicParsing="false" onAction="#onAgregarUsuario" style="-fx-background-color: #254f25;" text="Agregar Usuario" textAlignment="CENTER" textFill="#31df54" />
                                     <Label layoutX="31.0" layoutY="118.0" text="Nombre Completo" textAlignment="RIGHT" textFill="#31df54">
@@ -111,9 +111,9 @@
                               </AnchorPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="689.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="689.0" style="-fx-background-color: #FFFFFF;">
                            <children>
-                              <TextArea disable="true" editable="false" layoutX="13.0" layoutY="12.0" prefHeight="108.0" prefWidth="664.0">
+                              <TextArea fx:id="msgUsuario" disable="true" editable="false" layoutX="13.0" layoutY="12.0" prefHeight="155.0" prefWidth="664.0">
                                  <font>
                                     <Font size="15.0" />
                                  </font></TextArea>
@@ -127,9 +127,9 @@
                <content>
                   <SplitPane dividerPositions="0.7150243309002433" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
                      <items>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #FFFFFF;">
                            <children>
-                              <AnchorPane layoutX="-3.0" minHeight="0.0" minWidth="0.0" prefHeight="467.0" prefWidth="695.0" style="-fx-background-color: #FFFFFF;">
+                              <AnchorPane layoutX="-3.0" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="695.0" style="-fx-background-color: #FFFFFF;">
                                  <children>
                                     <Label layoutX="197.0" layoutY="156.0" prefHeight="43.0" prefWidth="85.0" text="Seleccione la clase" textAlignment="RIGHT" textFill="#31df54" wrapText="true">
                                        <font>
@@ -161,22 +161,22 @@
                               </AnchorPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="690.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="690.0" style="-fx-background-color: #FFFFFF;">
                            <children>
-                              <TextArea disable="true" editable="false" layoutX="13.0" layoutY="14.0" prefHeight="155.0" prefWidth="664.0" />
+                              <TextArea fx:id="msgClase" disable="true" editable="false" layoutX="13.0" layoutY="14.0" prefHeight="155.0" prefWidth="664.0" />
                            </children>
                         </AnchorPane>
                      </items>
                   </SplitPane>
                </content>
             </Tab>
-            <Tab text="Acceso Usuario">
+            <Tab fx:id="msgVerificar" text="Acceso Usuario">
                <content>
                   <SplitPane dividerPositions="0.720125786163522" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
                      <items>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="311.0" prefWidth="689.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="311.0" prefWidth="689.0" style="-fx-background-color: #FFFFFF;">
                            <children>
-                              <AnchorPane layoutX="2.0" layoutY="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="457.0" prefWidth="689.0" style="-fx-background-color: #FFFFFF;">
+                              <AnchorPane layoutX="2.0" layoutY="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="389.0" prefWidth="689.0" style="-fx-background-color: #FFFFFF;">
                                  <children>
                                     <TextField fx:id="txtIdVerificar" layoutX="314.0" layoutY="126.0" />
                                     <Label layoutX="231.0" layoutY="43.0" text="Verificar Acceso Usuario" textFill="#254f25">
@@ -196,9 +196,9 @@
                               </AnchorPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="690.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="690.0" style="-fx-background-color: #FFFFFF;">
                            <children>
-                              <TextArea disable="true" editable="false" layoutX="13.0" layoutY="14.0" prefHeight="155.0" prefWidth="664.0" />
+                              <TextArea fx:id="msgVerificar" disable="true" editable="false" layoutX="13.0" layoutY="14.0" prefHeight="155.0" prefWidth="664.0" />
                            </children>
                         </AnchorPane>
                      </items>
@@ -213,7 +213,7 @@
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
                                  <children>
-                                    <TableView fx:id="tblListUsuarios" layoutX="80.0" layoutY="97.0" prefHeight="354.0" prefWidth="530.0">
+                                    <TableView fx:id="tblListUsuarios" layoutX="80.0" layoutY="97.0" prefHeight="354.0" prefWidth="530.0" tableMenuButtonVisible="true">
                                        <columns>
                                           <TableColumn fx:id="tbcNombre" prefWidth="179.99998474121094" text="Nombre" />
                                           <TableColumn fx:id="tbcId" prefWidth="112.0" text="Identificacion" />

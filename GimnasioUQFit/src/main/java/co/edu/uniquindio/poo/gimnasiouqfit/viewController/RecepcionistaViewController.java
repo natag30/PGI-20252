@@ -2,10 +2,14 @@ package co.edu.uniquindio.poo.gimnasiouqfit.viewController;
 
 import co.edu.uniquindio.poo.gimnasiouqfit.GimnasioUQApplication;
 import co.edu.uniquindio.poo.gimnasiouqfit.controller.RecepcionistaController;
+import co.edu.uniquindio.poo.gimnasiouqfit.model.NivelMembresia;
+import co.edu.uniquindio.poo.gimnasiouqfit.model.TipoMembresia;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+
+import java.time.LocalDate;
 
 public class RecepcionistaViewController {
 
@@ -49,13 +53,13 @@ public class RecepcionistaViewController {
     private ChoiceBox<?> selHorario;
 
     @FXML
-    private ChoiceBox<?> selNivelMembresia;
+    private ChoiceBox<NivelMembresia> selNivelMembresia;
 
     @FXML
-    private ChoiceBox<?> selTipoMembresia;
+    private ChoiceBox<TipoMembresia> selTipoMembresia;
 
     @FXML
-    private ChoiceBox<?> selTipoUsuario;
+    private ChoiceBox<String selTipoUsuario;
 
     @FXML
     private TableColumn<?, ?> tbcCupos;
@@ -127,6 +131,15 @@ public class RecepcionistaViewController {
     private TextField txtTelefono;
 
     @FXML
+    private TextArea msgUsuario;
+
+    @FXML
+    private TextArea msgClase;
+
+    @FXML
+    private TextArea msgVerificar;
+
+    @FXML
     void onActualizarClases(ActionEvent event) {
 
     }
@@ -148,8 +161,59 @@ public class RecepcionistaViewController {
 
     @FXML
     void onAgregarUsuario(ActionEvent event) {
+        String nombre = txtNombre.getText();
+        int id = Integer.parseInt(txtId.getText());
+        int telefono = Integer.parseInt(txtTelefono.getText());
+        String correo = txtCorreo.getText();
+        String direccion = txtDireccion.getText();
+        String tipoUsuario = selTipoUsuario.getValue();
+        TipoMembresia tipoMembresia = selTipoMembresia.getValue();
+        NivelMembresia nivelMembresia = selNivelMembresia.getValue();
+        LocalDate inicio = dateInicio.getValue();
+
+        if (nombre.isEmpty() ||  correo.isEmpty() || direccion.isEmpty() || tipoUsuario == null || tipoMembresia == null || nivelMembresia == null || inicio == null) {
+            msgUsuario.setText("Campos incompletos \n Por favor llena todos los campos");
+            return;
+        }
+
+        if (!nombre.matches("[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+")) {
+            msgUsuario.setText("Nombre inválido \n El nombre solo debe contener letras");
+            return;
+        }
+
+        try {
+            if (id <= 0) {
+                msgUsuario.setText("ID inválido\nEl ID debe ser un número positivo");
+                return;
+            }
+        } catch (NumberFormatException e) {
+            msgUsuario.setText("ID inválido\nEl ID debe ser un número entero");
+            return;
+        }
 
 
+        try {
+            if (telefono <= 0) {
+                msgUsuario.setText("Telefono inválido\nEl Telefono debe ser un número positivo");
+                return;
+            }
+        } catch (NumberFormatException e) {
+            msgUsuario.setText("Telefono inválido\nEl Telefono debe ser un número entero");
+            return;
+        }
+
+        if (!correo.contains("@")) {
+            msgUsuario.setText("Correo inválido\nEl correo debe contener un '@'");
+            return;
+        }
+
+        boolean registrado = recepcionistaController.registrarUsuario(nombre, id, telefono, correo, direccion);
+
+        if (registrado) {
+            msgUsuario.setText("Éxito\nUsuario registrado correctamente");
+        } else {
+            msgUsuario.setText("Error\nEl usuario ya existe");
+        }
 
     }
 

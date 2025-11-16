@@ -1,11 +1,16 @@
 package co.edu.uniquindio.poo.gimnasiouqfit.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Entrenador {
 
     private String nombre;
     private int id;
     private int telefono;
     private String correo;
+
+    private List<Clase> listClasesEntrenador;
     ;
     /**
      * Constructor de la clase Entrenador
@@ -20,6 +25,11 @@ public class Entrenador {
         this.id = id;
         this.telefono = telefono;
         this.correo = correo;
+        this.listClasesEntrenador = new ArrayList<>();
+    }
+
+    public void asignarClase(Clase clase) {
+        listClasesEntrenador.add(clase);
     }
 
     public String getNombre() {

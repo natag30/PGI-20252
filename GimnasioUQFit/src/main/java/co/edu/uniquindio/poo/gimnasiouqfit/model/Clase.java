@@ -23,5 +23,13 @@ public class Clase {
         this.theRecepcionista = theRecepcionista;
     }
 
+    public boolean agregarUsuario (Usuario usuario){
+        if (listUsuariosClase.size() < cupoMax){
+            listUsuariosClase.add(usuario);
+            return true;
+        }
+        return false;
+    }
+
 
 }
