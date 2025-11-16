@@ -83,27 +83,35 @@ public class Administrador implements IGestion{
 
     /**
      * Metodo que controla el acceso del Administrador
-     * @param usuario
-     * @param contraseña
+     * @param administrador del Gimnasio
      * @return
      */
     public boolean controlAccesoAdministrador(String usuario, String contraseña) {
-        boolean bandera = false;
-        String usuarioAdministrador = "1094975918";
-        String contraseñaAdministrador = "1094975918";
-
-        if(usuarioAdministrador == usuario && contraseñaAdministrador == contraseña){
-            bandera = true;
-            System.out.println("Acceso permitido");
-        }
-
-        return bandera;
+        return this.usuario.equals(usuario) && this.contraseña.equals(contraseña);
     }
 
     @Override
-    public String generarReporte() {
-        return "";
+    public void generarReporte() {
+
     }
 
+    public String getUsuario() {
+        return usuario;
+    }
 
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public List<Entrenador> getListEntrenadoresAdministrador() {
+        return listEntrenadoresAdministrador;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
 }

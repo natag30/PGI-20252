@@ -49,7 +49,7 @@ public class Recepcionista implements IGestion{
 
 
     @Override
-    public String generarReporte() {
-        return "";
+    public void generarReporte() {
+
     }
 }

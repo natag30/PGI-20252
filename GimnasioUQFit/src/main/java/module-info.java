@@ -5,4 +5,7 @@ module co.edu.uniquindio.poo.gimnasiouqfit {
 
     opens co.edu.uniquindio.poo.gimnasiouqfit to javafx.fxml;
     exports co.edu.uniquindio.poo.gimnasiouqfit;
+
+    opens co.edu.uniquindio.poo.gimnasiouqfit.viewController to javafx.fxml;
+
 }

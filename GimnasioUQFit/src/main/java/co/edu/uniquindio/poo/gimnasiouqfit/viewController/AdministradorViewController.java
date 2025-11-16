@@ -1,5 +1,6 @@
 package co.edu.uniquindio.poo.gimnasiouqfit.viewController;
 
+import co.edu.uniquindio.poo.gimnasiouqfit.GimnasioUQApplication;
 import co.edu.uniquindio.poo.gimnasiouqfit.controller.AdministradorController;
 import co.edu.uniquindio.poo.gimnasiouqfit.model.Entrenador;
 import javafx.collections.ObservableList;
@@ -11,6 +12,7 @@ import javafx.scene.control.*;
 
 public class AdministradorViewController {
 
+    GimnasioUQApplication gimnasioUQApplication;
     AdministradorController administradorController;
     ObservableList<Entrenador> listEntrenador;
 
@@ -63,6 +65,9 @@ public class AdministradorViewController {
     private TextField txtTelefonoEntrenador;
 
     @FXML
+    private TextField msgEntrenador;
+
+    @FXML
     void onActualizarEntrenador(ActionEvent event) {
 
     }
@@ -75,6 +80,10 @@ public class AdministradorViewController {
     @FXML
     void onAgregarEntrenador(ActionEvent event) {
 
+    }
+
+    public void setGimnasioUQApplication(GimnasioUQApplication gimnasioUQApplication) {
+        this.gimnasioUQApplication = gimnasioUQApplication;
     }
 
 }

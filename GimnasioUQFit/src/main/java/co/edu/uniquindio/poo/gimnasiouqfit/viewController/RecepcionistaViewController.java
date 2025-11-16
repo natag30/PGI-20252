@@ -1,12 +1,15 @@
 package co.edu.uniquindio.poo.gimnasiouqfit.viewController;
 
+import co.edu.uniquindio.poo.gimnasiouqfit.GimnasioUQApplication;
 import co.edu.uniquindio.poo.gimnasiouqfit.controller.RecepcionistaController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
 public class RecepcionistaViewController {
 
+    GimnasioUQApplication  gimnasioUQApplication;
     RecepcionistaController recepcionistaController;
 
     @FXML
@@ -29,6 +32,9 @@ public class RecepcionistaViewController {
 
     @FXML
     private Button btnVerificar;
+
+    @FXML
+    private Button btnVolverInicio;
 
     @FXML
     private DatePicker dateFin;
@@ -157,4 +163,12 @@ public class RecepcionistaViewController {
 
     }
 
+    @FXML
+    void onVolverInicio(ActionEvent event) {
+        gimnasioUQApplication.openViewInicio();
+    }
+
+    public void setGimnasioUQApp(GimnasioUQApplication gimnasioUQApplication) {
+        this.gimnasioUQApplication = gimnasioUQApplication;
+    }
 }

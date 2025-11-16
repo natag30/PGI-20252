@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.poo.uqfitjavafx.viewController.InicioViewController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.gimnasiouqfit.viewController.InicioViewController">
    <children>
       <AnchorPane prefHeight="393.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;">
          <children>
@@ -18,13 +18,16 @@
                   <Font name="Arial Black" size="34.0" />
                </font>
             </Label>
-            <Label layoutX="262.0" layoutY="135.0" text="Ingresar como" />
+            <Label layoutX="240.0" layoutY="128.0" text="Ingresar como">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
             <Button id="botonAcceso" fx:id="btnAdministrador" layoutX="162.0" layoutY="172.0" mnemonicParsing="false" onAction="#onAdministrador" style="-fx-background-color: #254F25;" text="Administrador" textAlignment="CENTER" textFill="#31df54">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button id="botonAcceso" fx:id="btnAcceder1" layoutX="345.0" layoutY="172.0" mnemonicParsing="false" onAction="#onRecepcionista" style="-fx-background-color: #254F25;" text="Recepcionista" textAlignment="CENTER" textFill="#31df54">
+            <Button id="botonAcceso" fx:id="btnAcceder1" layoutX="339.0" layoutY="172.0" mnemonicParsing="false" onAction="#onRecepcionista" style="-fx-background-color: #254F25;" text="Recepcionista" textAlignment="CENTER" textFill="#31df54">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
