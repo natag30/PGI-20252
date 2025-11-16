@@ -29,6 +29,9 @@ public class AdministradorViewController {
     private Button btnAgregarEntrenador;
 
     @FXML
+    private Button btnVolverInicio;
+
+    @FXML
     private BarChart<?, ?> grafClases;
 
     @FXML
@@ -80,6 +83,11 @@ public class AdministradorViewController {
     @FXML
     void onAgregarEntrenador(ActionEvent event) {
 
+    }
+
+    @FXML
+    void onVolverInicio(ActionEvent event) {
+        gimnasioUQApplication.openViewInicio();
     }
 
     public void setGimnasioUQApplication(GimnasioUQApplication gimnasioUQApplication) {

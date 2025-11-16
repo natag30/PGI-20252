@@ -43,9 +43,7 @@ public class GimnasioUQApplication extends Application {
         }
     }
 
-    public static void main(String[] args) {
-        launch();
-    }
+    static void main(String[] args) {launch();}
 
     public void openViewLogin(){
         try {

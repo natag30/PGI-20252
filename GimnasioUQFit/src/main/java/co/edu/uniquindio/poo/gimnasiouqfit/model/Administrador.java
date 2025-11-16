@@ -83,7 +83,8 @@ public class Administrador implements IGestion{
 
     /**
      * Metodo que controla el acceso del Administrador
-     * @param administrador del Gimnasio
+     * @param usuario del administrador
+     * @param contraseña del administrador
      * @return
      */
     public boolean controlAccesoAdministrador(String usuario, String contraseña) {

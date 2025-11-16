@@ -19,9 +19,9 @@
 
 <VBox prefHeight="690.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.gimnasiouqfit.viewController.RecepcionistaViewController">
   <children>
-      <ButtonBar prefHeight="39.0" prefWidth="689.0">
+      <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="33.0" prefWidth="689.0">
         <buttons>
-          <Button fx:id="btnVolverInicio" mnemonicParsing="false" onAction="#onVolverInicio" style="-fx-background-color: #254f25;" text="Volver a Inicio" textFill="#31df54">
+          <Button fx:id="btnVolverInicio" mnemonicParsing="false" onAction="#onVolverInicio" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #254f25;" text="Volver a Inicio" textFill="#31df54">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -32,11 +32,11 @@
          <tabs>
             <Tab text="Agregar/Actualizar Usuario">
                <content>
-                  <SplitPane dividerPositions="0.7074209245742092" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                  <SplitPane dividerPositions="0.7908805031446541" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
                      <items>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="689.0">
                            <children>
-                              <AnchorPane layoutX="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="462.0" prefWidth="690.0" style="-fx-background-color: #FFFFFF;">
+                              <AnchorPane layoutX="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="448.0" prefWidth="690.0" style="-fx-background-color: #FFFFFF;">
                                  <children>
                                     <Button fx:id="btnAgregarUsuario" layoutX="183.0" layoutY="404.0" mnemonicParsing="false" onAction="#onAgregarUsuario" style="-fx-background-color: #254f25;" text="Agregar Usuario" textAlignment="CENTER" textFill="#31df54" />
                                     <Label layoutX="31.0" layoutY="118.0" text="Nombre Completo" textAlignment="RIGHT" textFill="#31df54">
@@ -111,9 +111,12 @@
                               </AnchorPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="690.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="689.0">
                            <children>
-                              <TextArea layoutX="13.0" layoutY="14.0" prefHeight="155.0" prefWidth="664.0" />
+                              <TextArea disable="true" editable="false" layoutX="13.0" layoutY="12.0" prefHeight="108.0" prefWidth="664.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></TextArea>
                            </children>
                         </AnchorPane>
                      </items>
@@ -160,7 +163,7 @@
                         </AnchorPane>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="690.0">
                            <children>
-                              <TextArea layoutX="13.0" layoutY="14.0" prefHeight="155.0" prefWidth="664.0" />
+                              <TextArea disable="true" editable="false" layoutX="13.0" layoutY="14.0" prefHeight="155.0" prefWidth="664.0" />
                            </children>
                         </AnchorPane>
                      </items>
@@ -169,11 +172,11 @@
             </Tab>
             <Tab text="Acceso Usuario">
                <content>
-                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                  <SplitPane dividerPositions="0.720125786163522" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
                      <items>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="311.0" prefWidth="689.0">
                            <children>
-                              <AnchorPane layoutX="2.0" layoutY="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="330.0" prefWidth="689.0" style="-fx-background-color: #FFFFFF;">
+                              <AnchorPane layoutX="2.0" layoutY="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="457.0" prefWidth="689.0" style="-fx-background-color: #FFFFFF;">
                                  <children>
                                     <TextField fx:id="txtIdVerificar" layoutX="314.0" layoutY="126.0" />
                                     <Label layoutX="231.0" layoutY="43.0" text="Verificar Acceso Usuario" textFill="#254f25">
@@ -195,7 +198,7 @@
                         </AnchorPane>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="690.0">
                            <children>
-                              <TextArea layoutX="13.0" layoutY="14.0" prefHeight="155.0" prefWidth="664.0" />
+                              <TextArea disable="true" editable="false" layoutX="13.0" layoutY="14.0" prefHeight="155.0" prefWidth="664.0" />
                            </children>
                         </AnchorPane>
                      </items>
