@@ -31,6 +31,23 @@ public abstract class Usuario implements IDescuento{
         this.theMembresia = theMembresia;
     }
 
+    public Usuario(String nombre, int id, int telefono, String correo, String direccion, Membresia theMembresia) {
+        this.nombre = nombre;
+        this.id = id;
+        this.telefono = telefono;
+        this.correo = correo;
+        this.direccion = direccion;
+        this.theMembresia = theMembresia;
+    }
+
+    public Usuario(String nombre, int id, int telefono, String correo, String direccion) {
+        this.nombre = nombre;
+        this.id = id;
+        this.telefono = telefono;
+        this.correo = correo;
+        this.direccion = direccion;
+    }
+
     public void reservarClase(Clase clase){
         clase.agregarUsuario(this);
     }

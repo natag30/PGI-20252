@@ -28,8 +28,26 @@ public class Entrenador {
         this.listClasesEntrenador = new ArrayList<>();
     }
 
-    public void asignarClase(Clase clase) {
-        listClasesEntrenador.add(clase);
+    public Entrenador(String nombre, int id, int telefono, String correo, Clase clase) {
+        this.nombre = nombre;
+        this.id = id;
+        this.telefono = telefono;
+        this.correo = correo;
+        this.listClasesEntrenador = new ArrayList<>();
+        asignarClase(clase);
+    }
+
+    /**
+     * Metodo para asignar una clase al entrenador
+     * @param clase
+     * @return
+     */
+    public boolean asignarClase(Clase clase) {
+        if (!listClasesEntrenador.contains(clase)) {
+            listClasesEntrenador.add(clase);
+            return true;
+        }
+        return false;
     }
 
     public String getNombre() {
@@ -63,4 +81,12 @@ public class Entrenador {
     public void setCorreo(String correo) {
         this.correo = correo;
     }
+
+    public String getClasesComoTexto() {
+        return listClasesEntrenador.stream()
+                .map(Clase::getNombre)
+                .reduce((a, b) -> a + ", " + b)
+                .orElse("Sin clases");
+    }
+
 }

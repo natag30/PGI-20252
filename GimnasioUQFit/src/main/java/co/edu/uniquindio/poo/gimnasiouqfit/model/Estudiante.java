@@ -17,6 +17,13 @@ public class Estudiante extends Usuario {
         super(nombre, id, telefono, correo, direccion, theClase, theMembresia);
     }
 
+    public Estudiante(String nombre, int id, int telefono, String correo, String direccion, Membresia theMembresia ) {
+        super(nombre, id, telefono, correo, direccion, theMembresia);
+    }
+
+    public Estudiante(String nombre, int id, int telefono, String correo, String direccion) {
+        super(nombre, id, telefono, correo, direccion);
+    }
 
     @Override
     public double calcularDescuento() {

@@ -4,9 +4,10 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import static co.edu.uniquindio.poo.gimnasiouqfit.model.TipoMembresia.*;
+
 public class Membresia {
 
-    private double costo;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
 
@@ -17,8 +18,7 @@ public class Membresia {
     private List<Usuario> listUsuariosMembresia;
     private Recepcionista theRecepcionista;
 
-    public Membresia(double costo, LocalDate fechaInicio, LocalDate fechaFin, TipoMembresia tipoMembresia, EstadoMembresia estadoMembresia, NivelMembresia nivelMembresia, Recepcionista theRecepcionista) {
-        this.costo = calcularCosto();
+    public Membresia(LocalDate fechaInicio, LocalDate fechaFin, TipoMembresia tipoMembresia, EstadoMembresia estadoMembresia, NivelMembresia nivelMembresia, Recepcionista theRecepcionista) {
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.tipoMembresia = tipoMembresia;
@@ -59,12 +59,9 @@ public class Membresia {
 
     }
 
-    public double getCosto() {
-        return costo;
-    }
-
-    public void setCosto(double costo) {
-        this.costo = costo;
+    public double calcularCostoFinal (Usuario usuario){
+        double descuento = usuario.calcularDescuento();
+        return calcularCosto() * (1.0 - descuento);
     }
 
     public LocalDate getFechaInicio() {
@@ -121,5 +118,18 @@ public class Membresia {
 
     public void setTheRecepcionista(Recepcionista theRecepcionista) {
         this.theRecepcionista = theRecepcionista;
+    }
+
+    @Override
+    public String toString() {
+        return "Membresia{" +
+                ", fechaInicio=" + fechaInicio +
+                ", fechaFin=" + fechaFin +
+                ", tipoMembresia=" + tipoMembresia +
+                ", estadoMembresia=" + estadoMembresia +
+                ", nivelMembresia=" + nivelMembresia +
+                ", listUsuariosMembresia=" + listUsuariosMembresia +
+                ", theRecepcionista=" + theRecepcionista +
+                '}';
     }
 }

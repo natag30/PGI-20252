@@ -1,14 +1,13 @@
 package co.edu.uniquindio.poo.gimnasiouqfit.model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Administrador implements IGestion{
 
     private String usuario;
     private String contraseña;
 
-    private List<Entrenador> listEntrenadoresAdministrador;
+    Map<Integer, Entrenador> entrenadores = new HashMap();
 
     /**
      * Constructor de la clase Administrador
@@ -18,7 +17,6 @@ public class Administrador implements IGestion{
     public Administrador(String usuario, String contraseña) {
         this.usuario = usuario;
         this.contraseña = contraseña;
-        this.listEntrenadoresAdministrador = new ArrayList<Entrenador>();
     }
 
     /**
@@ -26,69 +24,45 @@ public class Administrador implements IGestion{
      * @param entrenador
      */
     public boolean registrarEntrenador(Entrenador entrenador){
-        boolean centinela = false;
-        if (!verificarEntrenador(entrenador.getId())) {
-            listEntrenadoresAdministrador.add(entrenador);
-            centinela = true;
-            System.out.println("Entrenador " + entrenador.getId() + " registrado");
-        }
-        return centinela;
+        if (entrenadores.containsKey(entrenador.getId())) return false;
+        entrenadores.put(entrenador.getId(), entrenador);
+        return true;
+
     }
-
-
-    /**
-     * Metodo que permite verificar si el entrenador existe
-     * @param id
-     * @return
-     */
-    public boolean verificarEntrenador(int id) {
-        boolean centinela = false;
-        for (Entrenador ent : listEntrenadoresAdministrador) {
-            if (ent.getId() == id) {
-                centinela = true;
-                System.out.println("El entrenador existe");
-                break;
-            }else{
-                System.out.println("El entrenador no existe");
-            }
-        }
-        return centinela;
-    }
-
 
     /**
      * Metodo que  permite al Administrador eliminar un Entrenador del Gimnasio
      * @param entrenador
      */
     public boolean eliminarEntrenador(Entrenador entrenador){
-        boolean centinela = false;
-        for (Entrenador ent : listEntrenadoresAdministrador) {
-            if (ent.getNombre().equals(entrenador.getNombre())) {
-                listEntrenadoresAdministrador.remove(entrenador);
-                centinela = true;
-                System.out.println("Entrenador " + entrenador.getNombre() + " eliminado");
-                break;
-            }
-        }
-        return centinela;
+        return entrenadores.remove(entrenador.getId()) != null;
     }
 
-    /**
-     * Metodo que  permite al Administrador modificar la lista de entrenadores del Gimnasio
-     * @param listEntrenadores
-     */
-    public void setListEntrenadoresAdministrador(List<Entrenador> listEntrenadores) {
-        this.listEntrenadoresAdministrador = listEntrenadores;
+
+    public boolean actualizarEntrenador(int id, Entrenador entrenador) {
+        Entrenador existente = entrenadores.get(id);
+        if (existente == null) return false;
+
+        existente.setNombre(entrenador.getNombre());
+        existente.setTelefono(entrenador.getTelefono());
+        existente.setCorreo(entrenador.getCorreo());
+        return true;
     }
 
-    /**
-     * Metodo que controla el acceso del Administrador
-     * @param usuario del administrador
-     * @param contraseña del administrador
-     * @return
-     */
+        /**
+         * Metodo que controla el acceso del Administrador
+         * @param usuario del administrador
+         * @param contraseña del administrador
+         * @return
+         */
     public boolean controlAccesoAdministrador(String usuario, String contraseña) {
         return this.usuario.equals(usuario) && this.contraseña.equals(contraseña);
+    }
+
+    public boolean asignarClaseAEntrenador(int id, Clase clase) {
+        Entrenador entrenador = entrenadores.get(id);
+        if (entrenador == null) return false;
+        return entrenador.asignarClase(clase);
     }
 
     @Override
@@ -104,8 +78,8 @@ public class Administrador implements IGestion{
         this.usuario = usuario;
     }
 
-    public List<Entrenador> getListEntrenadoresAdministrador() {
-        return listEntrenadoresAdministrador;
+    public Collection<Entrenador> getEntrenadores() {
+        return entrenadores.values();
     }
 
     public String getContraseña() {

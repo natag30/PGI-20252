@@ -17,6 +17,14 @@ public class Externo extends Usuario{
         super(nombre, id, telefono, correo, direccion, theClase, theMembresia);
     }
 
+    public Externo(String nombre, int id, int telefono, String correo, String direccion, Membresia theMembresia ) {
+        super(nombre, id, telefono, correo, direccion, theMembresia);
+    }
+
+    public Externo(String nombre, int id, int telefono, String correo, String direccion) {
+        super(nombre, id, telefono, correo, direccion);
+    }
+
 
     @Override
     public double calcularDescuento() {

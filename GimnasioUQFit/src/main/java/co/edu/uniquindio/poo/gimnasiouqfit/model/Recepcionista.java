@@ -31,7 +31,7 @@ public class Recepcionista implements IGestion{
         return listUsuariosRecepcionista.remove(id) != null;
     }
 
-    public Usuario obtenerUsuario(String id) {
+    public Usuario obtenerUsuario(int id) {
         return listUsuariosRecepcionista.get(id);
     }
 
