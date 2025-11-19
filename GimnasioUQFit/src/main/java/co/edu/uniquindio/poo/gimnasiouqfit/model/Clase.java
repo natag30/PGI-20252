@@ -13,6 +13,15 @@ public class Clase {
     private Entrenador theEntrenador;
     private Recepcionista theRecepcionista;
 
+    /**
+     * Constructor de la clase Clase
+     * @param nombre de la clase
+     * @param tipo de la clase
+     * @param horario de la clase
+     * @param cupoMax de la clase
+     * @param theEntrenador de la clase
+     * @param theRecepcionista de la clase
+     */
     public Clase(String nombre, String tipo, String horario, int cupoMax, Entrenador theEntrenador, Recepcionista theRecepcionista) {
         this.nombre = nombre;
         this.tipo = tipo;
@@ -23,6 +32,13 @@ public class Clase {
         this.theRecepcionista = theRecepcionista;
     }
 
+    /**
+     * Constructor de la clase Clase
+     * @param nombre de la clase
+     * @param tipo de la clase
+     * @param horario de la clase
+     * @param cupoMax de la clase
+     */
     public Clase (String nombre, String tipo, String horario, int cupoMax){
         this.nombre = nombre;
         this.tipo = tipo;
@@ -30,6 +46,11 @@ public class Clase {
         this.cupoMax = cupoMax;
     }
 
+    /**
+     * Metodo que permite agregar un usuario a una clase
+     * @param usuario
+     * @return
+     */
     public boolean agregarUsuario (Usuario usuario){
         if (listUsuariosClase.size() < cupoMax){
             listUsuariosClase.add(usuario);

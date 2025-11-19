@@ -39,6 +39,12 @@ public class Administrador implements IGestion{
     }
 
 
+    /**
+     * Metodo que permite al administrador actualizar un entrenador del gimnasio
+     * @param id
+     * @param entrenador
+     * @return
+     */
     public boolean actualizarEntrenador(int id, Entrenador entrenador) {
         Entrenador existente = entrenadores.get(id);
         if (existente == null) return false;
@@ -57,12 +63,6 @@ public class Administrador implements IGestion{
          */
     public boolean controlAccesoAdministrador(String usuario, String contraseña) {
         return this.usuario.equals(usuario) && this.contraseña.equals(contraseña);
-    }
-
-    public boolean asignarClaseAEntrenador(int id, Clase clase) {
-        Entrenador entrenador = entrenadores.get(id);
-        if (entrenador == null) return false;
-        return entrenador.asignarClase(clase);
     }
 
     @Override

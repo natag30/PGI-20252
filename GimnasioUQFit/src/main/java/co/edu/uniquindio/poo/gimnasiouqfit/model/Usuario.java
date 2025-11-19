@@ -31,6 +31,15 @@ public abstract class Usuario implements IDescuento{
         this.theMembresia = theMembresia;
     }
 
+    /**
+     * Constructor de la clase Usuario
+     * @param nombre    del Usuario
+     * @param id        del Usuario
+     * @param telefono  del Usuario
+     * @param correo    del Usuario
+     * @param direccion del Usuario
+     * @param theMembresia del Usuario
+     */
     public Usuario(String nombre, int id, int telefono, String correo, String direccion, Membresia theMembresia) {
         this.nombre = nombre;
         this.id = id;
@@ -40,6 +49,14 @@ public abstract class Usuario implements IDescuento{
         this.theMembresia = theMembresia;
     }
 
+    /**
+     * Constructor de la clase Usuario
+     * @param nombre    del Usuario
+     * @param id        del Usuario
+     * @param telefono  del Usuario
+     * @param correo    del Usuario
+     * @param direccion del Usuario
+     */
     public Usuario(String nombre, int id, int telefono, String correo, String direccion) {
         this.nombre = nombre;
         this.id = id;
@@ -48,6 +65,10 @@ public abstract class Usuario implements IDescuento{
         this.direccion = direccion;
     }
 
+    /**
+     * Metodo que permite a un usuario reservar una clase
+     * @param clase
+     */
     public void reservarClase(Clase clase){
         clase.agregarUsuario(this);
     }

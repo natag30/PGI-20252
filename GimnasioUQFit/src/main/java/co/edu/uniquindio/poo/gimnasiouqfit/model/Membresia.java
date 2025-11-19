@@ -28,16 +28,27 @@ public class Membresia {
         this.theRecepcionista = theRecepcionista;
     }
 
+    /**
+     * Metodo para definir si una membresia está activa
+     * @return
+     */
     public boolean isActiva() {
         return LocalDate.now().isBefore(fechaFin);
     }
 
+    /**
+     * Metodo para desactivar una membresía
+     */
     public void desactivar() {
         if (!isActiva()) {
             this.estadoMembresia = EstadoMembresia.INACTIVA;
         }
     }
 
+    /**
+     * Metodo para calcular el costo de una membresia de un usuario
+     * @return
+     */
     public double calcularCosto() {
         return switch (tipoMembresia) {
             case MENSUAL -> switch (nivelMembresia) {
@@ -59,6 +70,11 @@ public class Membresia {
 
     }
 
+    /**
+     * Metodo para calcular el costo final que debe pagar el usuario con los descuentos
+     * @param usuario
+     * @return
+     */
     public double calcularCostoFinal (Usuario usuario){
         double descuento = usuario.calcularDescuento();
         return calcularCosto() * (1.0 - descuento);

@@ -29,7 +29,7 @@ public class AdministradorViewController {
     private Button btnActualizarReporteAdministrador;
 
     @FXML
-    private Button btnActualizarReporteAdministrador1;
+    private Button btnEliminarEntrenador;
 
     @FXML
     private Button btnAgregarEntrenador;
@@ -126,6 +126,7 @@ public class AdministradorViewController {
         grafClases.getData().clear();
         grafClases.getData().add(administradorController.obtenerDatosClasesPopulares());
     }
+
 
 
     @FXML

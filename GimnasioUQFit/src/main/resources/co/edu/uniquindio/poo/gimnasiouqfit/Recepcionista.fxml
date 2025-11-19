@@ -30,7 +30,7 @@
       </ButtonBar>
       <TabPane prefHeight="647.0" prefWidth="689.0" style="-fx-background-color: #FFFFFF;" tabClosingPolicy="UNAVAILABLE">
          <tabs>
-            <Tab text="Agregar/Actualizar Usuario">
+            <Tab text="Agregar Usuario">
                <content>
                   <SplitPane dividerPositions="0.7087378640776699" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
                      <items>

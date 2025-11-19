@@ -1,9 +1,6 @@
 package co.edu.uniquindio.poo.gimnasiouqfit.model;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Recepcionista implements IGestion{
 
@@ -18,26 +15,18 @@ public class Recepcionista implements IGestion{
         }
     }
 
-    public boolean modificarUsuario(int id, Usuario actualizado) {
-        if (!listUsuariosRecepcionista.containsKey(id)){
-            return false;
-        }else {
-            listUsuariosRecepcionista.put(id, actualizado);
-            return true;
-        }
-    }
-
+    /**
+     * Metodo que permite eliminar un usuario del Gimnasio
+     * @param id
+     * @return
+     */
     public boolean eliminarUsuario(int id) {
         return listUsuariosRecepcionista.remove(id) != null;
     }
 
-    public Usuario obtenerUsuario(int id) {
-        return listUsuariosRecepcionista.get(id);
-    }
-
 
     /**
-     * Metodo para agregar una clase en el gimnasio
+     * Metodo para asignar una clase a un usuario
      * @param clase
      */
     public boolean asignarClase(int id, Clase clase){
@@ -47,17 +36,19 @@ public class Recepcionista implements IGestion{
         return true;
     }
 
-    public boolean registrarMembresia(int id, Membresia membresia){
-        Usuario usuario = listUsuariosRecepcionista.get(id);
-        if (usuario == null) return false;
-        usuario.setMembresia(membresia);
-        return true;
-    }
-
+    /**
+     * Metodo para controlar el acceso de los usuarios al gimnasio
+     * @param id
+     * @return
+     */
     public boolean controlAccesoUsuario(int id){
         Usuario usuario = listUsuariosRecepcionista.get(id);
         return usuario != null && usuario.getMembresia() != null && usuario.getMembresia().isActiva();
 
+    }
+
+    public Collection<Usuario> getUsuarios() {
+        return listUsuariosRecepcionista.values();
     }
 
 

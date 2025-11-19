@@ -1,8 +1,6 @@
 package co.edu.uniquindio.poo.gimnasiouqfit;
 
-import co.edu.uniquindio.poo.gimnasiouqfit.model.Administrador;
-import co.edu.uniquindio.poo.gimnasiouqfit.model.GimnasioUQ;
-import co.edu.uniquindio.poo.gimnasiouqfit.model.Recepcionista;
+import co.edu.uniquindio.poo.gimnasiouqfit.model.*;
 import co.edu.uniquindio.poo.gimnasiouqfit.viewController.AdministradorViewController;
 import co.edu.uniquindio.poo.gimnasiouqfit.viewController.InicioViewController;
 import co.edu.uniquindio.poo.gimnasiouqfit.viewController.LoginViewController;
@@ -12,6 +10,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.util.List;
 
 public class GimnasioUQApplication extends Application {
 
@@ -78,6 +78,7 @@ public class GimnasioUQApplication extends Application {
             }catch (IOException e) {
             e.printStackTrace();
         }
+        inicializarData();
     }
 
     public void openViewRecepcionista(){
@@ -96,6 +97,20 @@ public class GimnasioUQApplication extends Application {
         }catch (IOException e) {
             e.printStackTrace();
         }
+        inicializarData();
     }
 
+    public void inicializarData(){
+        Recepcionista recepcionista = gimnasioUQ.getTheRecepcionista();
+        Administrador administrador = gimnasioUQ.getTheAdministrador();
+        Membresia membresia = new Membresia(LocalDate.now(), LocalDate.now().plusMonths(1), TipoMembresia.MENSUAL, EstadoMembresia.ACTIVA, NivelMembresia.BASICA, recepcionista);
+        Usuario usuario = new Estudiante("Julian Garcia", 7542623, 105245663, "jualgarc@gmail.com", "", membresia);
+        Membresia membresia1 = new Membresia(LocalDate.now(), LocalDate.now().plusMonths(3), TipoMembresia.TRIMESTRAL, EstadoMembresia.ACTIVA, NivelMembresia.PREMIUM, recepcionista);
+        Usuario usuario1 = new Estudiante("Natalia Garcia", 1094975918, 105245623, "natalia.garcia1992@gmail.com", "", membresia1);
+        recepcionista.registrarUsuario(usuario);
+        recepcionista.registrarUsuario(usuario1);
+        Clase clase = new Clase("Yoga", "Relajacion",  "Sabado 8:00 a 9:00 a.m", 20);
+        Entrenador entrenador = new Entrenador("Andres Sanchez", 1094965911, 3115245, "jaandres@gmail.com", clase);
+        administrador.registrarEntrenador(entrenador);
+    }
 }
