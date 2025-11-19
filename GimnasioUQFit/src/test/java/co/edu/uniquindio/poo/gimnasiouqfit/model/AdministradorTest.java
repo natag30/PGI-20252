@@ -25,11 +25,6 @@ class AdministradorTest {
     }
 
     @Test
-    void actualizarEntrenador() {
-
-    }
-
-    @Test
     void controlAccesoAdministrador() {
         Administrador administrador = new Administrador("1094975918", "123456");
         assertTrue( administrador.controlAccesoAdministrador(administrador.getUsuario(),administrador.getContraseña()));
