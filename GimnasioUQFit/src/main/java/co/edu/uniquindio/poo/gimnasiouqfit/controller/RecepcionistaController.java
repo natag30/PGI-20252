@@ -56,12 +56,9 @@ public class RecepcionistaController {
     }
 
     public Collection<Usuario> obtenerListaUsuarios() {
-        return gimnasioUQ.getListUsuarios();
+        return recepcionista.getUsuarios();
     }
 
-    public Collection<Membresia> obtenerListaMembresias() {
-        return gimnasioUQ.getListMembresias();
-    }
 
     public Collection<Clase> obtenerListaClases() {
         return gimnasioUQ.getListClases();

@@ -51,7 +51,6 @@ public class Recepcionista implements IGestion{
         return listUsuariosRecepcionista.values();
     }
 
-
     @Override
     public void generarReporte() {
 

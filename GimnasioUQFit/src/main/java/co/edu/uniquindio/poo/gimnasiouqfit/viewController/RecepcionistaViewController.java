@@ -238,11 +238,17 @@ public class RecepcionistaViewController {
         dateFin.setValue(fechaFin);
     }
 
-
         @FXML
     void onActualizarClases(ActionEvent event) {
-        Collection<Clase> listaClases = recepcionistaController.obtenerListaClases();
-        tblListClases.getItems().setAll(listaClases);
+            List<Clase> listClases = List.of(
+                    new Clase("Yoga", "Relajacion",  "Martes 8:00 a 9:00 a.m", 20),
+                    new Clase("Yoga", "Relajacion",  "Jueves 8:00 a 9:00 a.m", 20),
+                    new Clase("Spinning", "Cardio", "Lunes 5:00 a 6:00 p.m", 15),
+                    new Clase("Spinning", "Cardio", "Lunes 8:00 a 9:00 a.m", 15),
+                    new Clase("Boxeo", "Combate", "Miércoles 6:00 a 7:00 p.m", 10),
+                    new Clase("Boxeo", "Combate", "Viernes 6:00 a 7:00 p.m", 10)
+            );
+        tblListClases.getItems().setAll(listClases);
     }
 
     @FXML
@@ -330,6 +336,7 @@ public class RecepcionistaViewController {
     void onVerificar(ActionEvent event) {
         int id = Integer.parseInt(txtIdVerificar.getText());
         recepcionistaController.validarIngreso(id);
+        msgVerificar.setText("Ingreso concedido");
     }
 
     @FXML
